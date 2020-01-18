@@ -39,6 +39,7 @@ def classTypeConverter(classType):
     elif classType == "TUT":
         return "Tutorial"
 
+
 '''
 userInput = UserInput.ask_for_inputs()
 academicYear = userInput["acadYear"]
@@ -52,8 +53,9 @@ academicYear = "2019-2020"
 semester = 1
 modules = ["CS2030", "CS2040S", "MA2216", "MA2104", "GER1000", "GET1029", "GES1023"]
 
+#=========================================================================
+#Fetch timetable data
 timetable = {}
-
 for module in modules:
     response = requests.get("https://api.nusmods.com/v2/" + academicYear + "/modules/" + module + ".json")
     moduleData = response.json()
@@ -96,6 +98,24 @@ for module in modules:
 
     timetable[module] = slots
 
+#=========================================================================
+# remove modules past cutoff time
+filtered = copy.deepcopy(timetable)
+cutoff = 1700
+
+for module_code in timetable:
+    for slot_type in timetable[module_code]:
+        for slot_number in timetable[module_code][slot_type]:
+            for date_time in timetable[module_code][slot_type][slot_number]:
+                time_list = date_time['times']
+                remove = False
+                for hour in time_list:
+                    if hour > cutoff:
+                        remove = True
+            if remove:
+                filtered[module_code][slot_type].pop(slot_number)
+
+timetable = filtered
 print(timetable)
 
 def checkConflict(finalTimetable):
@@ -122,6 +142,41 @@ def checkConflict(finalTimetable):
 
     return False
 
+def getAvgFreeTime(finalTimetable):
+    #initialize empty schedule
+    schedule = []
+    for i in range(5):
+        schedule.append([])
+        for j in range(14):
+            schedule[i].append(0)
+
+    for module in finalTimetable:
+        classTypes = finalTimetable[module]
+        for classType in classTypes:
+            chosenClass = classTypes[classType]
+            slots = timetable[module][classTypeConverter(classType)][chosenClass]
+            for slot in slots:
+                day = dayConverter(slot["day"])
+                times = slot["times"]
+                for time in times:
+                    schedule[day][int(time/100 - 8)]= 1
+
+    gapNo = 0;
+    gapTotal = 0;
+    for day in schedule:
+        counting = False
+        for hour in day:
+            if not counting and hour == 0:
+                counting = True
+                gapNo += 1
+                gapTotal += 1
+            elif counting and hour == 1:
+                counting = False
+            elif counting and hour == 0:
+                gapTotal += 1
+    return gapTotal / gapNo if gapNo > 0 else 0
+
+
 
 '''
 #initialize empty schedule
@@ -133,41 +188,38 @@ for i in range(5):
 
 #print(schedule)
 '''
-for i in range(1000):
+
+validTimetables = []
+for i in range(10000):
     #randomly assign timetable
-    available = copy.deepcopy(timetable)
-    dictLen = len(available)
+    dictLen = len(timetable)
     randomTimetable = {}
-    while dictLen > 0:
-        module = choice([*available])
-        moduleData = available[module]
-        chosenClass = ""
-        typeLen = len(moduleData)
-
-        while typeLen > 0:
-            chosenClassType = choice([*moduleData])
-            classes = moduleData[chosenClassType]
+    for module in timetable:
+        classTypes = timetable[module]
+        for classType in classTypes:
+            classes = classTypes[classType]
             chosenClass = choice([*classes])
+            if module not in randomTimetable:
+                randomTimetable[module] = {}
 
-            for timeslot in classes[chosenClass]:
-                day = dayConverter(timeslot["day"])
-                times = timeslot["times"]
-                for time in times:
-                    #schedule[day][int((time/100) - 8)] = { "ModuleCode" : module, "ClassType" : chosenClassType, "ClassNo" : chosenClass}
-                    if module not in randomTimetable:
-                        randomTimetable[module] = {}
-
-                    randomTimetable[module][classTypeConverter(chosenClassType)] = chosenClass
-
-            typeLen -= 1
-            del available[module][chosenClassType]
-        del available[module]
-        dictLen -= 1
+            randomTimetable[module][classTypeConverter(classType)] = chosenClass
 
     #print(checkConflict(randomTimetable))
     if not checkConflict(randomTimetable):
-        print(OutputParser.create_url(randomTimetable))
+        #print(OutputParser.create_url(randomTimetable))
+        validTimetables.append(randomTimetable)
         #print(randomTimetable)
         #break
+print("generated")
+maxFreeTime = 0
+bestTimetable = None
+for validTimetable in validTimetables:
+    #print(getAvgFreeTime(validTimetable))
+    avgFreeTime = getAvgFreeTime(validTimetable)
+    if avgFreeTime > maxFreeTime:
+        maxFreeTime = avgFreeTime
+        bestTimetable = validTimetable
 
+print(OutputParser.create_url(bestTimetable))
+print(maxFreeTime)
 print("done")

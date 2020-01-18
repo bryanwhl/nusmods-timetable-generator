@@ -4,15 +4,18 @@ timetable = {"CS2030" : {"LEC" : 2, "LAB" : 18, "REC" : 2},
 semester = 2
 
 #Parser
-url = "https://nusmods.com/timetable/sem-" + str(semester) + "/share?"
+def create_url(timetable):
+    url = "https://nusmods.com/timetable/sem-" + str(semester) + "/share?"
 
-for module in timetable:
-    url += module + "="
+    for module in timetable:
+        url += module + "="
 
-    for classType in timetable[module]:
-        url += classType + ":" + str(timetable[module][classType]) + ","
+        for classType in timetable[module]:
+            url += classType + ":" + str(timetable[module][classType]) + ","
 
-    url += "&"
+        url += "&"
+
+    return url
 
 
-print(url)
+#print(create_url(timetable))
