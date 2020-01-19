@@ -16,6 +16,6 @@ The data of each modules in our project is obtained from NUSMODS API. The backen
 
 2. Follow the instructions and key in the preferences you want to set for your timetable. *Note that if you key in a module code of a module that is not offered on that particular semester, an error will occur. Similar errors will occur if you do not follow the input format strictly as stated on the input box.
 
-3. Generate the timetables. *It might take awhile
+3. Generate the timetables. *It might take awhile for the timetable to load.
 
 4. Five possible timetables will be generated that is optimised to your preferences so that you can reference them and build your timetable according to which of the five you like the most.
