@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="772e3667-7e87-42bb-8927-bec42d144a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579395611608</updated>
       <workItem from="1579395613963" duration="417000" />
-      <workItem from="1579402448097" duration="2378000" />
+      <workItem from="1579402448097" duration="2703000" />
     </task>
     <servers />
   </component>
@@ -92,22 +93,22 @@
       <screen x="0" y="23" width="1440" height="803" />
     </state>
     <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.803@0.23.1440.803" timestamp="1579396111076" />
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom" timestamp="1579404932458">
+    <state width="1398" height="206" key="GridCell.Tab.0.bottom" timestamp="1579405931177">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1579404932458" />
-    <state width="1398" height="206" key="GridCell.Tab.0.center" timestamp="1579404932458">
+    <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1579405931177" />
+    <state width="1398" height="206" key="GridCell.Tab.0.center" timestamp="1579405931176">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1579404932458" />
-    <state width="1398" height="206" key="GridCell.Tab.0.left" timestamp="1579404932457">
+    <state width="1398" height="206" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1579405931176" />
+    <state width="1398" height="206" key="GridCell.Tab.0.left" timestamp="1579405931176">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1579404932457" />
-    <state width="1398" height="206" key="GridCell.Tab.0.right" timestamp="1579404932458">
+    <state width="1398" height="206" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1579405931176" />
+    <state width="1398" height="206" key="GridCell.Tab.0.right" timestamp="1579405931177">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
-    <state width="1398" height="206" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1579404932458" />
+    <state width="1398" height="206" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1579405931177" />
     <state x="221" y="63" key="SettingsEditor" timestamp="1579395628336">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
@@ -118,6 +119,6 @@
     <state x="397" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.803@0.23.1440.803" timestamp="1579395614514" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NUSHack$itsbot.coverage" NAME="itsbot Coverage Results" MODIFIED="1579404932449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NUSHack$itsbot.coverage" NAME="itsbot Coverage Results" MODIFIED="1579405931167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

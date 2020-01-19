@@ -36,6 +36,8 @@ def classTypeConverter(classType):
         return "TUT"
     elif classType == "Seminar-Style Module Class":
         return "SEM"
+    elif classType == "Workshop":
+        return "WS"
     elif classType == "LEC":
         return "Lecture"
     elif classType == "LAB":
@@ -48,6 +50,8 @@ def classTypeConverter(classType):
         return "Tutorial"
     elif classType == "SEM":
         return "Seminar-Style Module Class"
+    elif classType == "WS":
+        return "Workshop"
 
 
 def checkConflict(finalTimetable, timetableData):
