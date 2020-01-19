@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <div class="jumbotron jumbotron-fluid">
+            <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">NUSMods Timetable Generator</h1>
-          <p class="lead">Key in your details and timetable preferences and our algorithms will customise the best suited timetable for you based on your preferences.</p>
+          <h1 class="display-4 mx-4">NUSMods Timetable Generator</h1>
+          <p class="lead mx-4">Key in your details and timetable preferences and our algorithms will customise the best suited timetable for you based on your preferences.</p>
         </div>
       </div>
-    <title>We're sorry. We are unable to generate a timetable with your constraints. Please feel free to go back and modify your input!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <div>
+        <title>Sorry!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </div>
 
     <style>
         input {
@@ -42,7 +44,7 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row h-50 justify-content-center align-items-center">
+        <div class="row mx-4 h-50 justify-content-center align-items-center">
             <form method="post" action="/generate">
                 <!--<label for="TimetableForm">Please select your Academic Year</label>-->
                 <!--<div class="form-group">-->
@@ -53,7 +55,7 @@
                         <!--    </select>-->
                         <!--</div>-->
 
-                        <p for="semNumber">Sorry! We are unable to generate a timetable that meet your requirements. Please feel free to try again with new constraints.</p>
+                        <p for="semNumber">We're sorry. We are unable to generate a timetable with your constraints. Please feel free to go back and modify your input!</p>
 
                         <p><input type="button" class="btn btn-danger btn-lg" onclick="history.back()" value="BACK"/></p>
                     </form>
