@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="772e3667-7e87-42bb-8927-bec42d144a2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserInput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venue_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue_distance.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WalVhxLZs9t00voEkBpNJosBUa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="772e3667-7e87-42bb-8927-bec42d144a2a" name="Default Changelist" comment="" />
+      <created>1579395611608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579395611608</updated>
+      <workItem from="1579395613963" duration="154000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="221" y="63" key="SettingsEditor" timestamp="1579395628336">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.23.1440.803@0.23.1440.803" timestamp="1579395628336" />
+    <state x="397" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1579395614514">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="397" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.803@0.23.1440.803" timestamp="1579395614514" />
+  </component>
+</project>

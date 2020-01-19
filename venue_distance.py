@@ -17,7 +17,7 @@ def find_distance(venue_a, venue_b, venue_list):
 
 
 if __name__ == "__main__":
-    with open('venues.json', 'r') as f:
+    with open('/home/bryanwhl/project/venues.json', 'r') as f:
         venues = json.load(f)
 
     print(find_distance("UT-AUD1", "UT-AUD2", venues))
