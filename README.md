@@ -8,4 +8,14 @@ recommended timetable.
 
 ## Built With
 
-The data of each modules in our project is obtained from NUSMODS API. The rest of the project is built with Python.
+The data of each modules in our project is obtained from NUSMODS API. The backend algorithms of the project is built with Python, whereas the frontend interface of the web app is built with HTML and Bootstrap. The routes between the web interface and the backend script is built with Flask.
+
+## How-to-use
+
+1. Go to the following URL: https://nus-mods-scheduler.herokuapp.com/
+
+2. Follow the instructions and key in the preferences you want to set for your timetable. *Note that if you key in a module code of a module that is not offered on that particular semester, an error will occur. Similar errors will occur if you do not follow the input format strictly as stated on the input box.
+
+3. Generate the timetables. *It might take awhile
+
+4. Five possible timetables will be generated that is optimised to your preferences so that you can reference them and build your timetable according to which of the five you like the most.
