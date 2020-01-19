@@ -281,7 +281,7 @@ def generate(parameters):
     '''
 
     validTimetables = []
-    for i in range(50000):
+    for i in range(20000):
         # randomly assign timetable
         dictLen = len(timetable)
         randomTimetable = {}
@@ -321,9 +321,6 @@ def generate(parameters):
     #print(OutputParser.create_url(validTimetables[:5]))
     print("done")
     urls = list(map(lambda timetable: OutputParser.create_url(timetable), validTimetables[:5]))
-    imagePaths = []
-    for url in urls:
-        x = screenshot.generate_screenshot(url)
-        imagePaths.append(x)
+
     print(urls)
-    return urls, imagePaths
+    return urls

@@ -36,9 +36,9 @@ def Generated():
                   "blockSize" : blockSize,
                   "prioritizeFreeTime" : prioritizeFreeTime,
                   "prioritizeDistance" : prioritizeDistance}
-    urls, imagePaths = Scrapper.generate(parameters)
+    urls = Scrapper.generate(parameters)
 
-    return render_template("result.html", url1=urls[0], url2=urls[1], url3=urls[2], url4=urls[3], url5=urls[4], image1=imagePaths[0], image2=imagePaths[1], image3=imagePaths[2], image4=imagePaths[3], image5=imagePaths[4])
+    return render_template("result.html", url1=urls[0], url2=urls[1], url3=urls[2], url4=urls[3], url5=urls[4])
 
 if __name__ == '__main__':
     app.run()
