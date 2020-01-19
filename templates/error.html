@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">NUSMods Timetable Generator</h1>
+          <p class="lead">Key in your details and timetable preferences and our algorithms will customise the best suited timetable for you based on your preferences.</p>
+        </div>
+      </div>
+    <title>We're sorry. We are unable to generate a timetable with your constraints. Please feel free to go back and modify your input!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        input {
+          border-spacing: 0;
+          width: 100%;
+      }
+
+      p {
+        margin-left: 0%;
+        font-size: 20px;
+    }
+
+    #leaderboard {
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row h-50 justify-content-center align-items-center">
+            <form method="post" action="/generate">
+                <!--<label for="TimetableForm">Please select your Academic Year</label>-->
+                <!--<div class="form-group">-->
+                    <!--    <select required class="form-control" id="Placeholder4" name="AcadYear">-->
+                        <!--        <option disabled selected value="">Select Option</option>-->
+                        <!--        <option value="2019-2020">AY2019-2020</option>-->
+                        <!--        <option value="2018-2019">AY2018-2019</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+
+                        <p for="semNumber">Sorry! We are unable to generate a timetable that meet your requirements. Please feel free to try again with new constraints.</p>
+
+                        <p><input type="button" class="btn btn-danger btn-lg" onclick="history.back()" value="BACK"/></p>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </body>
+
+        </html>

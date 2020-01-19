@@ -38,7 +38,10 @@ def Generated():
                   "prioritizeDistance" : prioritizeDistance}
     urls = Scrapper.generate(parameters)
 
-    return render_template("result.html", url1=urls[0], url2=urls[1], url3=urls[2], url4=urls[3], url5=urls[4])
+    if urls == "Timetable is impossible":
+        return render_template("error.html")
+    else:
+        return render_template("result.html", url1=urls[0], url2=urls[1], url3=urls[2], url4=urls[3], url5=urls[4])
 
 if __name__ == '__main__':
     app.run()

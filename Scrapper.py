@@ -295,8 +295,8 @@ def generate(parameters):
                 if (len(classes) > 0):
                     chosenClass = choice([*classes])
                 else:
-                    print("Timetable is impossible")
-                    exit()
+                    return "Timetable is impossible"
+
 
                 randomTimetable[module][classTypeConverter(classType)] = chosenClass
         # print(checkConflict(randomTimetable))
