@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="772e3667-7e87-42bb-8927-bec42d144a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserInput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venue_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venue_distance.py" afterDir="false" />
-    </list>
+    <list default="true" id="772e3667-7e87-42bb-8927-bec42d144a2a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579395611608</updated>
-      <workItem from="1579395613963" duration="154000" />
+      <workItem from="1579395613963" duration="417000" />
     </task>
     <servers />
   </component>
@@ -57,6 +51,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579396111076">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.803@0.23.1440.803" timestamp="1579396111076" />
     <state x="221" y="63" key="SettingsEditor" timestamp="1579395628336">
       <screen x="0" y="23" width="1440" height="803" />
     </state>
