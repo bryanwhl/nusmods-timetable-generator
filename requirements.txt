@@ -57,7 +57,7 @@ pyTelegramBotAPI==3.6.6
 pytesseract==0.3.0
 python-dateutil==2.7.5
 pytz==2018.7
-PyYAML==5.1.2
+PyYAML==5.4
 regex==2019.6.8
 requests==2.22.0
 requests-oauthlib==1.2.0
